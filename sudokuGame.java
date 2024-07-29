@@ -20,7 +20,7 @@ public sudokuGame(int[][] grid){
                 candidates[i][j].add(k);
             }
             //check column
-            
+            for()
             //check row
             //check square  
                 //find equation to middle of each square then +/- 1 in all directions
