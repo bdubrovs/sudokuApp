@@ -2,6 +2,7 @@
   text-align: center;
 }
 
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -21,7 +22,21 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(255, 255, 255);
+}
+
+
+.userTable {
+  border : 2px solid;
+  display: inline-block;
+  margin-top: 20px;
+  border-spacing: 0;
+}
+
+td {
+  border: 2px solid;
+  width: 5%;
+  height: 5%;
 }
 
 .App-link {

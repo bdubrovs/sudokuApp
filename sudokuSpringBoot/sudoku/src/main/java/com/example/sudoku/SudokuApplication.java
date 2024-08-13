@@ -1,5 +1,17 @@
-import java.util.Set;
+package com.example.sudoku;
+
 import java.util.HashSet;
+import java.util.Set;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.RestController;
+
+@SpringBootApplication
+public class SudokuApplication {
+@RestController
+@CrossOrigin(origins = "http://localhost:3000")
 public class sudokuGame {
     private Set<Integer>[][] candidates;
     private int[][] grid;
@@ -49,6 +61,8 @@ public class sudokuGame {
 
     }
 }
-public static void main(String[] args){
+	public static void main(String[] args) {
+		SpringApplication.run(SudokuApplication.class, args);
+	}
 
 }
